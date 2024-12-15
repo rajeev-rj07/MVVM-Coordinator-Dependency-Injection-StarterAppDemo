@@ -1,10 +1,10 @@
 # MVVM-Coordinator-Dependency-Injection-StarterAppDemo
 
-This project is made by following MVVM-C and DI pattern and Test Driven Development.
-It is just a skelton app that is ready to to be a kick starter for any app. Just follow and the comments added along with the sample code written by me. You'll be able to understand how it works and then make your changes.
+This project follows the MVVM-C (Model-View-ViewModel-Coordinator) pattern, along with Dependency Injection (DI) and Test-Driven Development (TDD).
+It's a skeleton app designed to be a kickstarter for any new project. Simply follow the comments and sample code provided, and you'll be able to understand its structure and make the necessary modifications.
 
 This skeleton app gives you an idea on how I personally setup my projects if I were to make them from scratch.
-API service ready out of the box using Moya/Combine
-Testing ready using Dependency-Injection with Swinject library.
+API service integration using Moya with Combine.
+Testing setup with Dependency Injection using the Swinject library.
 
 # Unit tests will be added soon
