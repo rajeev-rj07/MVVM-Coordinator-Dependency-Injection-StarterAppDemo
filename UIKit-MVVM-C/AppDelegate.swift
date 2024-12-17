@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MVVM-C
 //
-//  Created by Rajeev Kulariya on 13/12/24.
+//  Created by Huy Nguyen on 14/12/2022.
 //
 
 import UIKit

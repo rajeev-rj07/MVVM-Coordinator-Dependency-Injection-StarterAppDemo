@@ -39,3 +39,7 @@ protocol SessionManaging {
     // Deletes the user's data from the keychain on the first app launch.
     func deleteUserFromKeychainOnFirstLaunch()
 }
+
+extension SessionManaging {
+    func deleteUserFromKeychainOnFirstLaunch() {}
+}

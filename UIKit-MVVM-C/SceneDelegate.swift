@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MVVM-C
 //
-//  Created by Rajeev Kulariya on 13/12/24.
+//  Created by Huy Nguyen on 14/12/2022.
 //
 
 import UIKit
@@ -15,15 +15,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let navigationController = UINavigationController()
-        appCoordinator = AppCoordinator(navigationController: navigationController, finishAction: { _ in 
+        appCoordinator = AppCoordinator(navigationController: navigationController, finishAction: { _ in
 
         })
         appCoordinator?.start()
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
-
-
     }
 }
 
