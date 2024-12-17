@@ -15,7 +15,7 @@ protocol SignInViewControllerDelegate: AnyObject {
     func navigateUserToForgotPassword()
 }
 
-final class SignInViewController: UIViewController {
+final class SignInViewController: BaseViewController {
 
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
@@ -37,7 +37,7 @@ final class SignInViewController: UIViewController {
     private lazy var signInButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign In", for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         return button
@@ -46,7 +46,7 @@ final class SignInViewController: UIViewController {
     private lazy var signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         return button
@@ -55,7 +55,7 @@ final class SignInViewController: UIViewController {
     private lazy var forgotPasswordButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Forgot Password", for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         return button
@@ -77,7 +77,6 @@ final class SignInViewController: UIViewController {
         super.viewDidLoad()
         title = "Sign In"
         navigationItem.hidesBackButton = true
-        view.setRandomGradientBackground()
         setupViews()
         setupConstraints()
         bind()

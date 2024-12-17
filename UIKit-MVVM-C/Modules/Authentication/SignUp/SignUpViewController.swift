@@ -12,7 +12,7 @@ protocol SignUpViewControllerDelegate: AnyObject {
     func dismiss()
 }
 
-final class SignUpViewController: UIViewController {
+final class SignUpViewController: BaseViewController {
 
     private lazy var firstNameTextField: UITextField = {
         let textField = UITextField()
@@ -68,7 +68,7 @@ final class SignUpViewController: UIViewController {
     private lazy var signUpButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign Up", for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         return button
@@ -82,7 +82,6 @@ final class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.setRandomGradientBackground()
         title = "Sign Up"
 
         setupViews()

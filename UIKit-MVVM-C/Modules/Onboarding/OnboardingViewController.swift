@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import SwiftUI
 
 protocol OnboardingViewControllerDelegate: AnyObject {
     func finishedOnboarding()
 }
 
-final class OnboardingViewController: UIViewController {
+final class OnboardingViewController: BaseViewController {
 
     // MARK: - Properties
     private lazy var onboardingTopLabel: UILabel = {
@@ -25,7 +26,7 @@ final class OnboardingViewController: UIViewController {
 
     private lazy var onboardingLabel: UILabel = {
         let label = UILabel()
-        label.text = "MVVM-Coordinator-Dependency-Injection-StarterAppDemo"
+        label.text = "MVVM-Coordinator-Dependency-Injection-StarterAppDemo\n\nRandom Gradient on every screen"
         label.font = UIFont.systemFont(ofSize: 30, weight: .semibold)
         label.textAlignment = .center
         label.numberOfLines = 0 // Allows multiple lines
@@ -36,7 +37,7 @@ final class OnboardingViewController: UIViewController {
     private lazy var skipButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Skip", for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
@@ -53,7 +54,27 @@ final class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.setRandomGradientBackground()
+//        let swiftUIView = MeshGradientOverview().edgesIgnoringSafeArea(.all)
+//        // Create the UIHostingController for the SwiftUI view
+//        let hostingController = UIHostingController(rootView: swiftUIView)
+//        
+//        // Add the UIHostingController's view as a subview
+//        addChild(hostingController)
+//        
+//        // Set up constraints for the SwiftUI view
+//        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+//        view.addSubview(hostingController.view)
+//        
+//        // Add constraints for positioning
+//        NSLayoutConstraint.activate([
+//            hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
+//            hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+//            hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+//            hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+//        ])
+//        
+//        // Notify the hosting controller that it's been added
+//        hostingController.didMove(toParent: self)
 
         // Add the label and button to the view
         view.addSubview(onboardingTopLabel)

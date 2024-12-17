@@ -48,6 +48,8 @@
 		187E76672D0F2884000A6303 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E76562D0F2884000A6303 /* HomeViewModel.swift */; };
 		187E76682D0F2884000A6303 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E76582D0F2884000A6303 /* OnboardingCoordinator.swift */; };
 		187E76692D0F2884000A6303 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E76592D0F2884000A6303 /* OnboardingViewController.swift */; };
+		5DDB3A0E2D11984B00CEDD0D /* MeshGradientOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB3A0D2D11984B00CEDD0D /* MeshGradientOverview.swift */; };
+		5DDB3A112D11C10200CEDD0D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB3A102D11C10200CEDD0D /* BaseViewController.swift */; };
 		FB73D2DAA58A3B83373DC8A5 /* Pods_UIKit_MVVM_C.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA6739EAE298CA2D1B7D7AA /* Pods_UIKit_MVVM_C.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +109,8 @@
 		187E76582D0F2884000A6303 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		187E76592D0F2884000A6303 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		4500DCFBB267938919DE9EE7 /* Pods-UIKit-MVVM-CTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-MVVM-CTests.release.xcconfig"; path = "Target Support Files/Pods-UIKit-MVVM-CTests/Pods-UIKit-MVVM-CTests.release.xcconfig"; sourceTree = "<group>"; };
+		5DDB3A0D2D11984B00CEDD0D /* MeshGradientOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientOverview.swift; sourceTree = "<group>"; };
+		5DDB3A102D11C10200CEDD0D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8A93659A72BBB5C9F19CA5D4 /* Pods_UIKit_MVVM_CTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKit_MVVM_CTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE49B97CA3397D5468EF3D1 /* Pods-UIKit-MVVM-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKit-MVVM-C.release.xcconfig"; path = "Target Support Files/Pods-UIKit-MVVM-C/Pods-UIKit-MVVM-C.release.xcconfig"; sourceTree = "<group>"; };
 		9CA6739EAE298CA2D1B7D7AA /* Pods_UIKit_MVVM_C.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKit_MVVM_C.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +279,7 @@
 		187E75FF2D0F2434000A6303 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5DDB3A0F2D1198FF00CEDD0D /* Helper */,
 				187E75F12D0F2434000A6303 /* Models */,
 				187E75FC2D0F2434000A6303 /* Services */,
 				187E75FE2D0F2434000A6303 /* Utils */,
@@ -403,6 +408,15 @@
 				4500DCFBB267938919DE9EE7 /* Pods-UIKit-MVVM-CTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5DDB3A0F2D1198FF00CEDD0D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5DDB3A0D2D11984B00CEDD0D /* MeshGradientOverview.swift */,
+				5DDB3A102D11C10200CEDD0D /* BaseViewController.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		EA373BF0BC64EAF82B12B19B /* Frameworks */ = {
@@ -583,6 +597,7 @@
 			files = (
 				187E762D2D0F2434000A6303 /* UserDefaultBoolPropertyWrapper.swift in Sources */,
 				187E76672D0F2884000A6303 /* HomeViewModel.swift in Sources */,
+				5DDB3A0E2D11984B00CEDD0D /* MeshGradientOverview.swift in Sources */,
 				187E765D2D0F2884000A6303 /* ForgotPasswordViewController.swift in Sources */,
 				187E76202D0F2434000A6303 /* Container+ServiceRegistrations.swift in Sources */,
 				187E765C2D0F2884000A6303 /* ForgotPasswordCoordinator.swift in Sources */,
@@ -591,6 +606,7 @@
 				187E76272D0F2434000A6303 /* AuthenticationNetworkServicing.swift in Sources */,
 				187E76262D0F2434000A6303 /* AuthenticationNetworkService.swift in Sources */,
 				187E76622D0F2884000A6303 /* SignUpCoordinator.swift in Sources */,
+				5DDB3A112D11C10200CEDD0D /* BaseViewController.swift in Sources */,
 				00ED0FF42954BBBD004F9397 /* AppDelegate.swift in Sources */,
 				187E76242D0F2434000A6303 /* SignUpModel.swift in Sources */,
 				187E76652D0F2884000A6303 /* MainAppCoordinator.swift in Sources */,

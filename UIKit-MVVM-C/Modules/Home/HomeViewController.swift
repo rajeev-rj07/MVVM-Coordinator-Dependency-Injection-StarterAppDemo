@@ -14,13 +14,14 @@ protocol HomeViewControllerDelegate: AnyObject {
     
 }
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: BaseViewController {
 
     // Labels for user information
     let idLabel: UILabel = {
         let label = UILabel()
         label.text = "ID: "
         label.textAlignment = .center
+        label.textColor = .label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
     }()
@@ -29,6 +30,7 @@ final class HomeViewController: UIViewController {
         let label = UILabel()
         label.text = "First Name:"
         label.textAlignment = .center
+        label.textColor = .label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
     }()
@@ -37,6 +39,7 @@ final class HomeViewController: UIViewController {
         let label = UILabel()
         label.text = "Last Name:"
         label.textAlignment = .center
+        label.textColor = .label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
     }()
@@ -45,6 +48,7 @@ final class HomeViewController: UIViewController {
         let label = UILabel()
         label.text = "Email:"
         label.textAlignment = .center
+        label.textColor = .label
         label.font = UIFont.systemFont(ofSize: 16)
         return label
     }()
@@ -76,7 +80,6 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         // Set the background color of the view
-        view.setRandomGradientBackground()
 
         // Create a vertical stack view to hold the labels
         let stackView = UIStackView(arrangedSubviews: [idLabel, firstNameLabel, lastNameLabel, emailLabel])

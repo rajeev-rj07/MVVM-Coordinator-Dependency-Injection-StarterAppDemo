@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LogoutViewController: UIViewController {
+class LogoutViewController: BaseViewController {
 
     private lazy var logoutButton: UIButton = {
         let button = UIButton(type: .system)
@@ -22,7 +22,6 @@ class LogoutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.setRandomGradientBackground()
         title = "Logout"
 
         setupViews()

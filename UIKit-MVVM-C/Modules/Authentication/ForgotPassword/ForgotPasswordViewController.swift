@@ -11,7 +11,7 @@ protocol ForgotPasswordViewControllerDelegate: AnyObject {
     func dismiss()
 }
 
-final class ForgotPasswordViewController: UIViewController {
+final class ForgotPasswordViewController: BaseViewController {
 
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
@@ -24,7 +24,7 @@ final class ForgotPasswordViewController: UIViewController {
     private lazy var submitButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Submit", for: .normal)
-        button.backgroundColor = .white
+        button.backgroundColor = .systemBackground
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         return button
@@ -38,7 +38,6 @@ final class ForgotPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.setRandomGradientBackground()
         title = "Forgot Password"
 
         setupViews()
